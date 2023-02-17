@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="css/style_sub.css">
+    <link rel="stylesheet" href="css/notosanskr.css">
+
+    <!--icon-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        
+    <!-- 0209  -->
+	<!-- box icons  -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!-- <div id="wrap"> -->
+    <header id="header">
+        <div id="headerin">
+            <h1 class="logo"><a href="index.html"></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li class="d1">
+                        <a href="sub1.html" class="m">ABOUT</a>
+                    </li> <!--1번 메뉴-->
+                    <li class="d1">
+                        <a href="sub2.html" class="m">PRODUCT</a>
+                    </li> <!--2번 메뉴-->
+                    <li class="d1">
+                        <a href="sub3.html" class="m">COMMUNITY</a>
+                    </li> <!--3번 메뉴-->
+                    <li class="d1">
+                        <a href="sub4.html" class="m">NEWS</a>
+                    </li> <!--4번 메뉴-->
+                    <!-- 0208 검색창 -->
+					<li class="d1 search-box">
+                        <button class="Search"><img class="fa-search" src="images/search.png" alt=""></button>
+                        <input type="text" class="input-search" placeholder="검색어를 입력하세요">
+                    </li>
+
+					<!-- **장바구니 구현** -->
+					<!-- cart icon  -->
+					<i class='bx bx-shopping-bag' id="cart-icon"></i>
+					<!-- cart box  -->
+					<div class="cart">
+						<h2 class="cart-tilte">장바구니</h2>
+						<!-- content -->
+						<div class="cart-content">
+							<div class="cart-box">
+								<img src="images/sub2/lamp_1.png" alt="" class="cart-img">
+								<div class="detail-box">
+									<div class="cart-product-title">Cucurbit lamp</div>
+									<div class="cart-price">
+										$25
+									</div>
+									<input type="number" value="1" class="cart-quantity">
+								</div> 
+								
+								 <i class='bx bx-trash cart-remove'></i>
+
+							</div>
+						</div>
+
+						<!-- total  -->
+						<div class="total">
+							<div class="total-title">총 결제금액</div>
+							<div class="total-price">$0
+							</div>
+						</div>
+
+						<!-- buy btn  -->
+						<button type="button" class="btn-buy">구매하기</button>
+						<!-- cart close  -->
+						<i class='bx bx-x' id="cart-close"></i>
+					</div>
+
+                </ul>
+            </nav>
+            <!-- <button class="openStoreSearch">검색열기</button> -->
+        </div>
+        <!-- headerin  -->
+    </header>
+
+    <!-- sidebar -->
+    <!-- <div class="menu_bg"></div>
+        <div class="sidebar_menu">
+            <div class="close_btn"><a href="#">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </a>
+            </div>
+            <ul class="menu_wrap">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+                <li><a href="#">NEWS</a></li>
+            </ul>
+        </div> -->
+
+    <div id="banner_wrap">
+        <div class="banner">
+            <div class="bannerin">
+                <!-- <img src="images/sub/brand_top.png" alt=""> -->
+                <h1>ABOUT US</h1>
+                <p>Art in Your Life, ARTIU</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="section1">
+        <h2>Where Lifestyle Meets ART </h2>
+        <p class="txt">우리의 라이프스타일은 예술과 마주칠 수 있습니다.</p>
+    </section>
+
+    <div class="wrap">
+        <section id="about">
+            <div class="about_wrapper">
+                <div class="about-text">
+                    <strong>Brand Story</strong>
+                    <h2>ARTIU- WHAT?</h2>
+                    <!-- <span>Inspiration & concept</span> -->
+                    <p>호모 루덴스(유희의 인간)에서 <span> ‘홈(home) + 루덴스(놀이) 족’ </span>이라는
+                        <br> 신조어가 등장하면서 자신의 집 안에서 여가생활과 놀이를
+                        <br> 즐기는 사람들이 많아졌습니다. 앙리 마티스가 노년기 작품활동에 사용했던
+                        <br> <span> 컷 아웃 스타일(종이 자르기) 기법과 루덴스=놀이 </span>라는 컨셉에 예술적 영감을 받았습니다.
+                        <br> 마티스의 파랑새처럼 <span> 무한한 ‘자유로움’</span>을 추구하는 브랜드입니다.
+                    </p>
+                </div>
+                <div class="about-img">
+                    <img src="images/sub/brandstory.png" alt="">
+                </div>
+            </div>
+
+            <div class="about_wrapper">
+                <div class="about-img">
+                    <img src="images/sub/brandstory2.png" alt="">
+                </div>
+                <div class="about-text">
+                    <h2>ART & YOU</h2>
+                    <p>예술은 생각하는 사람에 의해 만들어지고 생각하는 사람에 의해 제공됩니다.
+                        <br> 예술이란 생활의 일부이며 우리가 살아갈 삶의 에너지이기도 합니다.
+                    </p>
+                    <br>
+                    <p>예술은 멀리있는게 전혀 아닙니다. 우리는 누구나 우리 안에 예술성을
+                        <br> 가지고 있으며
+                        일상생활, 나만의 공간을 아트적이고 감각적으로 채울 수 있습니다.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="about_wrapper">
+                <div class="about-text">
+                    <h2>OUR SERVICE</h2>
+                    <p>ARTIU는 미적으로 아름다우며 다양하고 특이한
+                        <br> 인테리어 홈데코 소품 콜렉션을 선보이고 있습니다.
+                        <br> 또한 신진 미술작가와의 콜라보레이션,
+                        <br> ARTIU의 자체제작 상품도 판매합니다.
+                    </p>
+                    <br>
+                    <p>다양한 홈데코 아이템들로 나만의 공간을 꾸며보세요!</p>
+                </div>
+                <div class="about-img">
+                    <img src="images/sub/brandstory_3.png" alt="">
+                </div>
+            </div>
+
+
+            <!-- 브랜드아이덴티티  -->
+            <div class="about_wrapper">
+                <div class="about-text">
+                    <strong>Brand Identity</strong>
+                    <h3>Logo</h3>
+                    <img src="images/sub/brand_logo.png" alt="">
+
+                    <p>전체적으로 종이자르기 느낌의 형태와 U글자에 마티스 스타일의
+                        <br>식물 포인트를 넣어 U(YOU)에게 예술이 깃들어있다는 것을 표현하였습니다.
+                    </p>
+
+                </div>
+
+                <div class="none">
+                    <h3>Color</h3>
+
+                    <div class="main_c color">
+                        <p>main</p>
+                        <img src="images/sub/maincolor.png" alt="">
+                    </div>
+
+                    <div class="sub_c color">
+                        <p>sub</p>
+                        <img src="images/sub/subcolor.png" alt="">
+                    </div>
+                    <p>메인 컬러는 주황색으로 포인트를 주고
+                        <br> 차분한 서브컬러를 활용합니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- wrap end -->
+
+    <!-- 텍스트애니 테스트  -->
+    <div class="body">
+        <div class="marquee">
+            <div>#ARTIU &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; #ARTIU &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; #ARTIU
+                &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; #ARTIU &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; #ARTIU
+                &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; #ARTIU &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; #ARTIU
+                &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; #ARTIU &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp; #ARTIU
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 브랜드 미션 mission -->
+    <section id="mission_wrap">
+        <div class="mission">
+            <div class="circle">
+                <div class="circle1 circle">
+                    <span class="message">ART </span>
+                </div>
+                <div class="circle2 circle">
+                    <span class="message">HOME</span>
+                </div>
+            </div>
+            <p>ARTIU의 미션은 평범한 일상, 나의 공간에서 예술을 발견하고 가치있게 만드는 것을 목표로 합니다.</p>
+        </div>
+    </section>
+
+    <!-- section7_newsletter-->
+    <div id="section7">
+        <div class="newstext">
+            <h4><img src="images/logo.png" alt=""></h4>
+            <p>ARTIU의 다양한 소식을 더 알고 싶으면 구독해주세요!</p>
+            <div class="form">
+                <input type="text" placeholder="Enter your email">
+                <input type="button" value="Subscribe"></input>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer id="footer">
+        <div id="footerin">
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#">Insta <br>@ArtiU </a></li>
+                    <li><a href="#">
+                            Mail <br> ArtiU@gmail.com </a></li>
+                    <li><a href="#">Tell
+                            <br> 02-1234-5678
+                        </a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <p>
+                    <span>부산시 중구 중앙대로
+                    </span>
+                    <span>대표: 최마티</span>
+                    <span>사업자 등록번호 : 119-81-05079</span>
+                </p>
+                <p>
+                    <span>전화번호 : 02-1234-5678</span>
+                    <span>고객센터 : 020-123-4567</span>
+                </p>
+            </div>
+            <div class="copyright">
+                COPYRIGHTⓒ ARTIU
+                <br>ALL RIGHT RESERVED.
+            </div>
+        </div>
+        <!--#footerin-->
+    </footer>
+
+    <!-- </div> -->
+    <!-- wrap  -->
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	margin:0; padding:0;}
+body{
+	font-family: 'Noto Sans KR', sans-serif, '돋움', Dotum;
+	font-size:14px; line-height:20px; color:#121212;}
+ul, ol{
+	list-style:none;}
+img{
+	border:0;
+	vertical-align:top;}
+a{
+	text-decoration:none;}
+fieldset{
+	border:0;}
+legend{
+	display:none;}
+button{
+	cursor:pointer; vertical-align:top;}
+input{
+	vertical-align:top;}
+select{
+	vertical-align:top;}
+
+
+
+
+
+
+

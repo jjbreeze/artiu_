@@ -1,0 +1,561 @@
+﻿<!doctype html>
+<html lang="ko">
+
+<head> 
+    <meta charset="utf-8">
+    
+    <!-- 0212 mix-content 에러 추가-->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>ARTIU</title>
+
+    <link rel="stylesheet" href="css/notosanskr.css">
+    
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+
+    <!--icon-->
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+    <!-- top btn  -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script src="js/jquery-1.12.3.js"></script>
+	<script src="js/script.js"></script>
+
+    <!-- custom -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <!--sidebar menu-->
+    <script src="js/motion.js"></script>
+
+    <!-- swiper-->
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link href="css/index_style.css" rel="stylesheet" type="text/css">
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- slick slide -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <!-- slick slide js -->
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".regular").slick({
+                infinite: true, /* 맨끝이미지에서 끝나지 않고 다시 맨앞으로 이동 */
+                slidesToShow: 7, /* 화면에 보여질 이미지 갯수*/
+                slidesToScroll: 1,  /* 스크롤시 이동할 이미지 갯수 */
+                autoplay: true, /* 자동으로 다음이미지 보여주기 */
+                // arrows: true,  
+                /*화살표 */
+            //    dots:true,  
+                /*아래점 */
+                cssEase: 'linear',  /* 등속 */
+                autoplaySpeed: 0,/* 다음이미지로 넘어갈 시간 */
+                speed: 3000, /* 다음이미지로 넘겨질때 걸리는 시간 */
+                pauseOnHover: true, 
+                /* 마우스 호버시 슬라이드 이동 멈춤 */
+                // vertical:true,/* 세로방향으로 슬라이드를 원하면 추가하기// 기본값 가로방향 슬라이드*/ 
+                draggable: true, 	//드래그 가능 여부 
+
+                responsive: [ // 반응형 웹 구현 옵션
+                    {
+                        breakpoint: 960, //화면 사이즈 960px
+                        settings: {
+                            //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                            slidesToShow: 5
+                        }
+                    },
+                    {
+                        breakpoint: 768, //화면 사이즈 768px
+                        settings: {
+                            //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                            slidesToShow: 2
+                        }
+                    }
+                ]
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div id="headerin">
+                <h1 class="logo"><a href="#"></a></h1>
+                <!-- hambuger btn -->
+                <div class="menu_btn"><a href="#">
+                    <span class="material-symbols-outlined">
+                        sort
+                    </span>
+                </div>
+                <nav class="gnb">
+                    <ul>
+                        <li class="d1">
+                            <a href="sub1.html" class="m">ABOUT</a>
+                        </li> <!--1번 메뉴-->
+                        <li class="d1">
+                            <a href="sub2.html" class="m">PRODUCT</a>
+                        </li> <!--2번 메뉴-->
+                        <li class="d1">
+                            <a href="sub3.html" class="m">COMMUNITY</a>
+                        </li> <!--3번 메뉴-->
+                        <li class="d1">
+                            <a href="sub4.html" class="m">NEWS</a>
+                        </li> <!--4번 메뉴-->
+                    </ul>
+                </nav>
+                <button class="openStoreSearch">검색열기</button>
+            </div>
+            <!-- headerin  -->
+        </header>
+
+        <!-- sidebar -->
+        <div class="menu_bg"></div>
+        <div class="sidebar_menu">
+            <div class="close_btn"><a href="#">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </a>
+            </div>
+            <ul class="menu_wrap">
+                <li><a href="sub1.html">ABOUT</a></li>
+                <li><a href="sub2.html">PRODUCT</a></li>
+                <li><a href="sub3.html">COMMUNITY</a></li>
+                <li><a href="sub4.html">NEWS</a></li>
+            </ul>
+        </div>
+
+        <!-- contents -->
+        <main id="container">
+            <!-- banner  -->
+            <div class="slide">
+                <div class="slide_img">
+                    <div class="bg">
+                        <img src="images/banner.jpg" class="mobile">
+                        <img src="images/banner.jpg" class="pc">
+                    </div>
+                    <div class="text">
+                        <a href="#">
+                            <p class="t1">Where Lifestyle Meets ART </p>
+                            <p class="t2">
+                            <a href="https://xd.adobe.com/view/93f2a010-4995-416b-9402-ca0866449380-c6a1/?fullscreen">VIEW MORE</a></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section1_brand -->
+            <div id="section1_wrap">
+                <div class="section1 section">
+                    <h1><span class="slogan">ART in your Life,</span>
+                        당신의 일상을 예술로 물들이다</h1>
+                    <div class="brand_story_box">
+                        <img src="images/brandstory_bg.png" alt="">
+                        <div class="con_left">
+                            <strong>OUR STORY</strong>
+                            <p class="txt">ARTIU는 20세기 야수파 화가 <span class="bold">'앙리 마티스(Henri Matisse)'</span> <br> 작품에
+                                영향을 받아
+                                예술적 영감을 담은 브랜드이며,
+                                <br> 마티스의 컷 아웃 스타일을 접목했습니다.
+                                <br> 일상에 다채로움을 전달하는
+                                <span class="bold">ART HOMEDECO COMMUNITY</span>입니다.
+                            </p>
+                            <p class="btn"><a href="sub1.html">Read Story</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section1_wrap -->
+
+            <!-- section2_product -->
+            <div class="section2">
+                <h2>PRODUCT LINEUP</h2>
+                <p class="title">카테고리별 상품</p>
+            </div>
+            <ul class="product">
+                <li>
+                    <a href="sub2.html">
+                        <img src="images/icon_frame.png" alt="">
+                        <p>Lamp</p>
+                        <span class="material-symbols-outlined" class="arrow">
+                            arrow_right_alt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="vase.html">
+                        <img src="images/icon_frame.png" alt="">
+                        <p>Vase</p>
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="kitchen.html">
+                        <img src="images/icon_frame.png" alt="">
+                        <p>Kitchen</p>
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="carpet.html">
+                        <img src="images/icon_frame.png" alt="">
+                        <p>Carpet & Rug</p>
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plants.html">
+                        <img src="images/icon_frame.png" alt="">
+                        <p>Plants</p>
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="artprops.html">
+                        <img src="images/icon_frame.png" alt="">
+                        <p>Art props</p>
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- slide ani -->
+            <section class="regular slider">
+                <div>
+                    <img src="images/ARTIU.png">
+                </div>
+                <div>
+                    <img src="images/ARTIU.png">
+                </div>
+                <div>
+                    <img src="images/ARTIU.png">
+                </div>
+                <div>
+                    <img src="images/ARTIU.png">
+                </div>
+                <div>
+                    <img src="images/ARTIU.png">
+                </div>
+                <div>
+                    <img src="images/ARTIU.png">
+                </div>
+                <div>
+                    <img src="images/ARTIU.png">
+                </div>
+                <div>
+                    <img src="images/ARTIU.png">
+                </div>
+            </section>
+
+            <!--section3_insta-->
+            <div class="section3">
+                <div class="mobile">
+                    <h2>@ArtiU</h2>
+                    <p>나만의 아티스틱한 공간을 자랑해주세요</p>
+                    <ul>
+                        <li><a href="#">
+                                <img src="images/insta1.png">
+                                <p class="insta"></p>
+                                <p class="over"></p>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/insta3.png">
+                                <p class="insta"></p>
+                                <p class="over"></p>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/insta6.png">
+                                <p class="insta"></p>
+                                <p class="over"></p>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">
+                                <img src="images/insta2.png">
+                                <p class="insta"></p>
+                                <p class="over"></p>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/insta4.png">
+                                <p class="insta"></p>
+                                <p class="over"></p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="pc">
+                    <ul>
+                        <li><a href="#">
+                                <img src="images/sta1.png">
+                                <p class="insta"></p>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/sta4.png">
+                                <p class="insta"></p>
+                            </a></li>
+                    </ul>
+                    <ul class="insta_title">
+                        <li class="title">
+                            <h2>@ArtiU</h2>
+                            <p>나만의 아티스틱한 공간을 자랑해주세요</p>
+                            <a href="#">
+                                <img src="images/sta2.png">
+                                <p class="insta"></p>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="images/sta5.png">
+                                <p class="insta"></p>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">
+                                <img src="images/sta3.png">
+                                <p class="insta"></p>
+
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/sta6.png">
+                                <p class="insta"></p>
+                            </a></li>
+                    </ul>
+                </div>
+                <p class="btn1"> <a href="#">Follow Us</a></p>
+            </div>
+            <!--insta-->
+
+            <!-- section4_community -->
+            <div class="section4_wrap">
+                <div class="section4">
+                    <h2>COMMUNITY</h2>
+                    <div class="ani">
+                        <img src="images/home.png" alt="" class="home">
+                        <img src="images/round_ani.png" alt="" class="round_ani">
+                    </div>
+                </div>
+            </div>
+            <!-- section4_wrap end-->
+
+            <!-- section5_self -->
+            <div id="section5_wrap">
+                <div class="container">
+                    <div class="cover">
+                        <img class="cover-photo" src="images/interior.png" alt="">
+                    </div>
+                    <div class="contents">
+                        <h2>SELF HOME INTERIOR</h2>
+                        <p>
+                            <span class="bold"> ‘홈(home) + 루덴스(rudense)족’ </span>을 위한,
+                            <br> 당신의 공간을
+                            다채롭게 꾸밀 수 있는 셀프인테리어 노하우를
+                            <br> 안내해 드리겠습니다.
+                        </p>
+                        <p class="btn"><a href="sub3.html">View More</a></p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- section6_NEWS swiper-->
+            <div id="contents">
+                <h2>NEWS</h2>
+                <p class="txt">이달의 소식 & 프로모션</p>
+                <div id="contents1" class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <ul class="swiper-slide">
+                            <li><a href="#">
+                                    <div class="screen">
+                                        <img src="images/1.png" alt="1"></img>
+                                    </div>
+                                    <div class="bottom">
+                                        <span class="tag">
+                                            <p>기획전</p>
+                                        </span>
+                                        <p>HOLYDAY COLLECTION</p>
+                                    </div>
+                                </a></li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li><a href="#">
+                                    <div class="screen">
+                                        <img src="images/2.png" alt="1"></img>
+                                    </div>
+                                    <div class="bottom">
+                                        <span class="tag">
+                                            <p>콜라보</p>
+                                        </span>
+                                        <p>공예작가와의 콜라보레이션</p>
+                                    </div>
+                                </a></li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li><a href="#">
+                                    <div class="screen">
+
+                                        <img src="images/3.png" alt="1"></img>
+                                    </div>
+
+                                    <div class="bottom">
+                                        <span class="tag">
+                                            <p>이벤트</p>
+                                        </span>
+                                        <p>ARTIU 팝업스토어 SALE</p>
+                                    </div>
+                                </a></li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li><a href="#">
+                                    <div class="screen">
+
+                                        <img src="images/news4.png" alt="1"></img>
+                                    </div>
+                                    <div class="bottom">
+                                        <span class="tag">
+                                            <p>이벤트</p>
+                                        </span>
+                                        <p>ARTIU 매거진 1호 이벤트</p>
+                                    </div>
+                                </a></li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li><a href="#">
+                                    <div class="screen">
+
+                                        <img src="images/news5.png" alt="1"></img>
+                                    </div>
+                                    <div class="bottom">
+                                        <span class="tag">
+                                            <p>이벤트</p>
+                                        </span>
+                                        <p>인스타그램 Follow 이벤트</p>
+                                    </div>
+                                </a></li>
+                        </ul>
+                        <ul class="swiper-slide">
+                            <li><a href="#">
+                                    <div class="screen">
+
+                                        <img src="images/3.png" alt="1"></img>
+                                    </div>
+                                    <div class="bottom">
+                                        <span class="tag">
+                                            <p>이벤트</p>
+                                        </span>
+                                        <p>ARTIU 팝업스토어 SALE</p>
+                                    </div>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <p class="btn1" class="btn"> <a href="sub4.html">View All</a></p>
+            </div>
+
+        <!-- section7_newsletter-->
+        <div id="section7">
+                <div class="newstext">
+                    <h4><img src="images/logo.png" alt=""></h4>
+                    <p>ARTIU의 다양한 소식을 더 알고 싶으면 구독해주세요!</p>
+                    <div class="form">
+                        <input type="text" placeholder="Enter your email">
+                        <input type="button" value="Subscribe"></input>
+                    </div>
+                </div>
+        </div>
+        </main>
+
+        <!--footer-->
+        <footer id="footer">
+            <div id="footerin">
+                <div class="contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">Insta <br>@ArtiU </a></li>
+                        <li><a href="#">
+                                Mail <br> ArtiU@gmail.com </a></li>
+                        <li><a href="#">Tell
+                                <br> 02-1234-5678
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <p>
+                        <span>부산시 중구 중앙대로  
+                        </span>
+                        <span>대표: 최마티</span>
+                        <span>사업자 등록번호 : 119-81-05079</span>
+                    </p>
+                    <p>
+                        <span>전화번호 : 02-1234-5678</span>
+                        <span>고객센터 : 020-123-4567</span>
+                    </p>
+                </div>
+                <div class="copyright">
+                    COPYRIGHTⓒ ARTIU
+                    <br>ALL RIGHT RESERVED.
+                </div>
+            </div>
+            <!--#footerin-->
+        </footer>
+
+        </wrap>  
+
+        <!-- Top btn  -->
+        <div class="top fixed">
+            <a href="#"><img src="images/top.png" alt="top"></a>
+        </div>
+
+
+
+    <!-- swiper js -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            //   loop:true,
+            //   autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            //   },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        });
+    </script>
+
+
+
+</body>
+
+</html>

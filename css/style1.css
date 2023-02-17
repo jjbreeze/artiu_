@@ -1,0 +1,42 @@
+html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {box-sizing: border-box;}
+
+    .slider {
+        width: 100%;
+        /* 0109 위아래여백수정  */
+        margin: 80px auto;
+        background-color: #FFDF8E;
+        /* height: 80px; */
+        /* overflow: hidden; */
+        padding: 0 20px;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      /* width: 100%; */
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: 1;
+    }
+    
+    .slick-active {
+      opacity: 1;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
